@@ -1,4 +1,4 @@
-package com.sprout.message
+package com.sprout.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,20 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.sprout.R
 
-class MessageFragment : Fragment() {
+class HomeFragment : Fragment() {
 
+    //todo 首页
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return layoutInflater.inflate(R.layout.message_fragment,null)
+        val view = layoutInflater.inflate(R.layout.home_fragment, null)
+        initView()
+        return view
+    }
+
+    private fun initView() {
+
     }
 }

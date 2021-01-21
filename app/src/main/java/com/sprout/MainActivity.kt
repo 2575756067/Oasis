@@ -5,11 +5,11 @@ import android.view.View
 import androidx.fragment.app.FragmentTransaction
 import com.shop.base.BaseActivity
 import com.sprout.databinding.ActivityMainBinding
-import com.sprout.discover.DiscoverFragment
-import com.sprout.home.HomeFragment
-import com.sprout.me.MeFragment
-import com.sprout.message.MessageFragment
-import com.sprout.more.MoreActivity
+import com.sprout.ui.discover.DiscoverFragment
+import com.sprout.ui.home.HomeFragment
+import com.sprout.ui.me.MeFragment
+import com.sprout.ui.message.MessageFragment
+import com.sprout.ui.more.MoreActivity
 import com.sprout.viewmodel.MainViewModel
 
 class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(

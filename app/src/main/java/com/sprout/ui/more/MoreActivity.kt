@@ -1,4 +1,4 @@
-package com.sprout.more
+package com.sprout.ui.more
 
 import android.os.Bundle
 import android.os.PersistableBundle

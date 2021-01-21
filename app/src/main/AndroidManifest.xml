@@ -13,8 +13,11 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".more.MoreActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.sprout.ui.more.MoreActivity" />
+        <activity android:name=".ui.LoginActivity">
+
+        </activity>
+        <activity android:name="com.sprout.ui.welcome.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
