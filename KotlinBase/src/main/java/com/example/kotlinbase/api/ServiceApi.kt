@@ -1,18 +1,25 @@
 package com.shop.api
 
+import com.example.kotlinbase.bean.Local_ChannelBean
+import com.shop.net.BaseResp
+import retrofit2.http.GET
+import retrofit2.http.POST
+import retrofit2.http.Query
+
 interface ServiceApi {
 
-//    //商品详情底部数据  id=1155000
-//    @GET("goods/related")
-//    suspend fun getDetailInfoBottom(@Query("id")id:Int):BaseResp<DetailInfoBottomData>
-//
-//    //加入购物车
-//    @POST("cart/add")
-//    @FormUrlEncoded
-//    suspend fun AddCar(@FieldMap map: HashMap<String, String>):BaseResp<CarAddBean>
-//
-//    //获取购物车数据
-//    @GET("cart/index")
-//    suspend fun getCar():BaseResp<CarData>
+    //刷新token
+    @POST("auth/refreshToken")
+    suspend fun refreshToken(): BaseResp<String>
 
+    //频道分类数据
+    @GET("channel/channel")
+    suspend fun getLocal_Channel() :BaseResp<List<Local_ChannelBean>>
+
+
+//    @GET("tag/brand")
+//    suspend fun getBrand(@Query("page") page:Int, @Query("size") size:Int):BaseResp<Issue_BrandBean>
+
+//    @GET("tag/good")
+//    suspend fun getGood(@Query("page") page:Int, @Query("size") size:Int):BaseResp<Issue_GoodBean>
 }

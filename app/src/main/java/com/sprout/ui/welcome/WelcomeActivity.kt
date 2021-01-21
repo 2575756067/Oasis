@@ -40,15 +40,15 @@ class WelcomeActivity : AppCompatActivity() {
         if (!TextUtils.isEmpty(login) && !TextUtils.isEmpty(guidance)) {
             initTimer()
         }
+        if (!TextUtils.isEmpty(guidance)) {
+            initTimerRe()
+        }
     }
 
     //自动弹出pw
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-        if (!TextUtils.isEmpty(guidance)) {
-            //跳转到注册界面
-            initTimerRe()
-        } else {
+        if (TextUtils.isEmpty(guidance)) {
             initPw()
         }
     }

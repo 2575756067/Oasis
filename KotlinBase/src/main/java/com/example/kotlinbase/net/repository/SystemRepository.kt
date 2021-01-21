@@ -19,25 +19,9 @@ class SystemRepository {
         serviceApi = RetrofitFactory.instance.create(ServiceApi::class.java)
     }
 
-//    /**
-//     * 商品购买详情下面
-//     */
-//    suspend fun getDetailInfoBottom(id:Int) = withContext(Dispatchers.IO){
-//        serviceApi.getDetailInfoBottom(id)
-//    }
-//
-//    /**
-//     * 加入购物车
-//     */
-//    suspend fun AddCar(map: HashMap<String, String>) = withContext(Dispatchers.IO){
-//        serviceApi.AddCar(map)
-//    }
-//
-//    /**
-//     * 获取购物车列表
-//     */
-//    suspend fun getCar() = withContext(Dispatchers.IO){
-//        serviceApi.getCar()
-//    }
+    //TODO 获取主页推荐Tab页数据
+    suspend fun getLocal_Channel() = withContext(Dispatchers.IO) {
+        serviceApi.getLocal_Channel()
+    }
 
 }
