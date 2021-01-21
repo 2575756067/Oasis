@@ -2,8 +2,6 @@ package com.sprout
 
 import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
