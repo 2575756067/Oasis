@@ -9,6 +9,7 @@ import com.sprout.R
 
 class DiscoverFragment : Fragment() {
 
+    //todo 搜索页
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
